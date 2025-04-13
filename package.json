@@ -10,7 +10,6 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@kinde-oss/kinde-auth-nextjs": "^2.5.6",
     "@tailwindcss/postcss": "^4.0.8",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
     "next": "15.1.7",
