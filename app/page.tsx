@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import Counter from "./components/Counter";
+
 export default function Home() {
   return (
     <section className="py-20">
@@ -8,6 +10,7 @@ export default function Home() {
           <h1 className="mb-8 text-center text-3xl font-bold text-blue-500">
             Hello world!
           </h1>
+          <Counter />
           <div className="flex items-center justify-between">
             <Image
               src="/images/promo.jpeg"
