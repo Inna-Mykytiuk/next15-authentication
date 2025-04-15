@@ -1,14 +1,21 @@
-import Typography from "@mui/material/Typography";
+import ItemForm from "@/components/ItemForm";
+import ItemList from "@/components/ItemList";
+import ItemSearch from "@/components/ItemSearch";
+import { Container, Typography } from "@mui/material";
 
 const AdminShop = () => {
   return (
-    <div className="container py-[100px]">
-      <div className="flex h-screen w-full justify-center">
-        <Typography variant="h4" gutterBottom>
-          Admin Shop Page
-        </Typography>
-      </div>
-    </div>
+    <Container maxWidth="sm" sx={{ height: "80hv", marginTop: "48px" }}>
+      <Typography variant="h4" gutterBottom>
+        Admin Shop Page
+      </Typography>
+      <ItemForm />
+      <Typography variant="h5" gutterBottom sx={{ mt: 4 }}>
+        My Items
+      </Typography>
+      <ItemSearch />
+      <ItemList />
+    </Container>
   );
 };
 
