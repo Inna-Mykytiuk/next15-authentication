@@ -1,6 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 
-import Counter from "./components/Counter";
+import Counter from "../components/Counter";
 
 export default function Home() {
   return (
@@ -23,6 +24,12 @@ export default function Home() {
             <div className="h-[440px] w-[400px] bg-[url('/images/promo.jpeg')] bg-cover bg-center bg-no-repeat"></div>
           </div>
         </div>
+        <Link
+          href="/admin-shop"
+          className="mt-8 rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-600"
+        >
+          to Admin Shop Page
+        </Link>
       </div>
     </section>
   );
